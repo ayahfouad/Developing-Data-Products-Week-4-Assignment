@@ -23,24 +23,16 @@ Using the data provided by Galton Families dataset, we fit a linear model to pre
 
 The application is running on (https://r2po.shinyapps.io/course_project_shiny_appreproducible_pitch/)
 
-ui.R, and Server.R Code in my github repository [https://github.com/ayahfouad/Developing-Data-Products-Week-4-Assignment]
+ui.R, and Server.R Code in my github repository https://github.com/ayahfouad/Developing-Data-Products-Week-4-Assignment/tree/master/Developing-Data-Products-Week-4-Assignment
 
 Galton Families Dataset
 ========================================================
 The data used in the app comes from the GaltonFamilies dataset.
 
-```{r summary}
-library(HistData)
-data(GaltonFamilies)
-summary(GaltonFamilies)
-```
 
-Plot
-========================================================
-In the scatterplot below are represented the data used for the prediction model 
-```{r, echo=FALSE}
-library(HistData)
-data(GaltonFamilies)
-plot(jitter(GaltonFamilies$childHeight) ~ GaltonFamilies$midparentHeight,xlab="Average Height of the Parents (in inches)",ylab="Height of the Child (in inches)",main="Scatterplot of Galton Family Data",pch=19,frame.plot=FALSE,col=ifelse(GaltonFamilies$gender=="female", "pink", "light blue"))
-legend(65,80,pch=c(19,19),col=c("pink","light blue"),c("female", "male"),bty="o",cex=.8)
+
+
+
+```
+Error in summary(GaltonFamilies) : object 'GaltonFamilies' not found
 ```
